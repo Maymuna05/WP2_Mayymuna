@@ -26,7 +26,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Yakin mau keluar?</h5>
-                <button class="close" type="button" datadismiss="modal" aria-label="Close">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
@@ -54,7 +54,7 @@ aria-labelledby="exampleModalLabel" aria-hidden="true">
 <script>
     $('.custom-file-input').on('change', function() {
         let fileName = $(this).val().split('\\').pop();
-        $(this).next('.custom-filelabel').addClass("selected").html(fileName);
+        $(this).next('.custom-file-label').addClass("selected").html(fileName);
     });
 
     $(document).ready(function() {
